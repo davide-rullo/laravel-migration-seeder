@@ -16,36 +16,28 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm ">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Trenitalia</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID" aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarID">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+    <nav class="nav justify-content-center  ">
+        <a class="nav-link text-white p-4" href="#" aria-current="page">
+            <h3>Trenitalia</h3>
+        </a>
 
-                </div>
-            </div>
-        </div>
     </nav>
-    <main class="bg-light">
+    <main class="">
         <div class="container p-4">
 
             <table class="table table-bordered">
                 <thead>
                     <tr>
 
-                        <th scope="col">Compagnia</th>
-                        <th scope="col">Stazione di partenza</th>
-                        <th scope="col">Stazione di arrivo</th>
-                        <th scope="col">Orario di partenza</th>
-                        <th scope="col">Orario di arrivo</th>
-                        <th scope="col">Codice</th>
-                        <th scope="col">Numero Carrozze</th>
-                        <th scope="col">In orario</th>
-                        <th scope="col">Cancellato</th>
+                        <th class="theadrow" scope="col">Compagnia</th>
+                        <th class="theadrow" scope="col">Stazione di partenza</th>
+                        <th class="theadrow" scope="col">Stazione di arrivo</th>
+                        <th class="theadrow" scope="col">Orario di partenza</th>
+                        <th class="theadrow" scope="col">Orario di arrivo</th>
+                        <th class="theadrow" scope="col">Codice</th>
+                        <th class="theadrow" scope="col">Numero Carrozze</th>
+                        <th class="theadrow" scope="col">In orario</th>
+                        <th class="theadrow" scope="col">Cancellato</th>
 
 
                     </tr>
