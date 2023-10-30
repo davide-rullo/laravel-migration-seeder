@@ -1,6 +1,8 @@
 <?php
 
+use App\Models\Train;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Guests\PagesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [PagesController::class, 'index'])->name('home');
