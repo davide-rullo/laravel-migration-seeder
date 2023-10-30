@@ -32,13 +32,50 @@
     </nav>
     <main class="bg-light">
         <div class="container p-4">
-            <ul class="list-group">
-                @forelse ($trains as $train)
-                <li class="list-group-item">{{$train->azienda}}</li>
-                @empty
-                <h1>no trains </h1>
-            </ul>
-            @endforelse
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+
+                        <th scope="col">Compagnia</th>
+                        <th scope="col">Stazione di partenza</th>
+                        <th scope="col">Stazione di arrivo</th>
+                        <th scope="col">Orario di partenza</th>
+                        <th scope="col">Orario di arrivo</th>
+                        <th scope="col">Codice</th>
+                        <th scope="col">Numero Carrozze</th>
+                        <th scope="col">In orario</th>
+                        <th scope="col">Cancellato</th>
+
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @forelse ($trains as $train)
+                    <tr>
+                        <td>{{$train->azienda}}</td>
+                        <td>{{$train->stazione_partenza}}</td>
+                        <td>{{$train->stazione_arrivo}}</td>
+                        <td>{{$train->orario_partenza}}</td>
+                        <td>{{$train->orario_arrivo}}</td>
+                        <td>{{$train->codice_treno}}</td>
+                        <td>{{$train->numero_carrozze}}</td>
+                        <td>{{$train->in_orario == 1 ? "Si" : "No"}}</td>
+                        <td>{{$train->cancellato == 1 ? "Si" : "No"}}</td>
+                    </tr>
+                    @empty
+                    <tr>
+                        <td colspan="9">
+                            <h1>nessun treno disponibile</h1>
+                        </td>
+                    </tr>
+                    @endforelse
+                </tbody>
+            </table>
+
+
+
+
         </div>
     </main>
 
